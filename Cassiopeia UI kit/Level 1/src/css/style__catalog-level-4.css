@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.1)
+}
+
+@font-face {
+    font-family: "Inter"; /* Имя шрифта */
+    src: url('../fonts/Inter-Regular.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: "Roboto"; /* Имя шрифта */
+    src: url('../fonts/Roboto-Regular.ttf'); /* Путь к файлу со шрифтом */
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    width: 1440px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 1156px;
+    
+}
+
+.header__top-inner {
+    /* Установим Flex контейнер */
+    display: flex; 
+    /* Row - в строку слева на право, Nowrap - отображаются в 1 ряд, чтобы уместиться в ширину контейнера */
+    flex-flow: row nowrap;
+    /* Распределяет пространство между и вокруг элементов контента */
+    justify-content: space-between;
+    /* Элементы располагаются по центру поперечной оси */
+    align-items: center;
+    position: relative;
+    height: 51.86px;
+    
+}
+
+.header__top-left {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.header__top-left a {
+    margin-left: 7px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.header__top-right ul {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    list-style: none;
+}
+
+.header__top-right li {
+    margin-left: 23px;
+}
+
+.header__top-right li :last-child {      
+    margin-left: 0;
+}
+
+.header__bottom-inner {
+    height: 79.64px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header__bottom-inner nav {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-grow: 0.33;
+    order: 1;
+
+    
+}
+
+.header__bottom-category ul  {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.header__bottom-category {
+    flex-grow: 1; 
+    
+}
+
+.header__bottom-category a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: center;
+    text-decoration: none;
+}
+
+.main {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.hero {
+    width: 1156px;
+}
+
+.hero__breadcrumbs {
+    margin-bottom: 42.14px;
+    margin-top: 28.36px;
+}
+
+.hero__breadcrumbs ul {
+    display: flex; 
+    flex-flow: row nowrap;  
+}
+
+.hero__breadcrumbs li {
+    margin-right: 12px;
+}
+
+.hero__breadcrumbs a {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000; 
+    flex: none;
+    order: 2;
+    align-self: center;
+    /* margin: 12px 12px; */
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.hero__filter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.hero__filters {
+    display: flex;
+    flex-direction: row nowrap;
+}
+
+.hero__filters div {
+    display: flex;
+    flex-direction: row nowrap;
+    margin-right: 80px;
+}
+
+.hero__filters p {
+    margin-right: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.hero__filters img {
+    height: 5px;
+    width: 9px;
+}
+
+.filter__amount {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;  
+    color: #000000;
+}
+
+.hero__line {
+    width: 1154px;
+    border: 1px solid #E6E6EB;
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.hero__section ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.hero__section li {
+    height: 366px;
+    width: 260px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    text-decoration: none;
+   
+}
+
+.card__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin: 20px 8px auto 8px;
+}
+
+.card__prices {
+    margin-top: 8px;
+}
+
+.card__price {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    align-self: center;
+    margin: 16px 0px;
+}
+
+.card__priceOld {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #82828B;
+    flex: none;
+    order: 1;
+    align-self: center;
+    margin: 16px 0px;
+    vertical-align: top;
+}
+
+.hero__section-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.hero__section-more {
+    background: #595CFF;
+    border-radius: 4px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 223px;
+    height: 46px;
+}
+
+.footer {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.footer__top-inner {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: top;
+    margin-top: 58px;
+    margin-bottom: 52px;
+}
+
+.footer__column {
+    width: 200px;
+    margin-right: 118px;
+}
+
+.footer__column-fourth {
+    margin-right: 0;
+}
+
+.column__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.column__title-list {
+    margin-bottom: 11px
+}
+
+.card {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 12px
+}
+
+.column__social-list {
+    display: flex; 
+    flex-flow: row nowrap;
+    margin-top: 17px;
+}
+
+.instagramm {
+    margin-right: 24px;
+}
+
+.whatsup {
+    margin-right: 29px;
+}
+
+.footer__line {
+    border-bottom: 1px solid #AFB1BD;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+    margin-bottom: 20px;
+}
+
+.footer__bottom-inner {
+    padding-bottom: 33px;
+}
+
+.coopyright {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #AFB1BD;
+    margin-left: 1px;
+}
+
+
